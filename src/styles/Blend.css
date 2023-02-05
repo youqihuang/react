@@ -1,0 +1,66 @@
+.blend{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .blend .title {
+    font-family: 'Bebas Neue', sans-serif;
+    width: 75%;
+    font-size: 50px;
+    margin-left: 15px;
+  }
+
+  .playlistList {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  
+  .playlistItem {
+    border-radius: 15px;
+    width: 200px;
+    height: 250px;
+    text-align: start;
+    font-size: 12px;
+    margin: 30px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  .playlistItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .playlistItem div {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .playlistItem h1,
+  .playlistItem p {
+    margin-left: 50px;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .playlistList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .playlistList {
+      grid-template-columns: 1fr;
+    }
+  }
